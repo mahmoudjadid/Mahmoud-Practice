@@ -12,3 +12,9 @@ r = (rent*salary)/100
 list =[e, s, r]
 print (list)
 
+def expences():
+    totalEx=s + e + r
+    totalAmount=salary - totalEx
+    print (f"your total expences {totalAmount}")
+    
+expences()
