@@ -17,4 +17,10 @@ def expences():
     totalAmount=salary - totalEx
     print (f"your total expences {totalAmount}")
     
+def yearly():
+    yearlye=e*12
+    yearlyr=r*12
+    totalyearexp=yearlye+yearlyr
+    print (f"your total expences per year {totalyearexp}")
+    
 expences()
