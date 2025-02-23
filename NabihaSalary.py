@@ -20,7 +20,6 @@ def expences():
 def yearly():
     yearlye=e*12
     yearlyr=r*12
-    totalyearexp=yearlye+yearlyr
-    print (f"your total expences per year {totalyearexp}")
+    totalyearexp=yearlye+yearlyr9    print (f"your total expences per year {totalyearexp}")
     
 expences()
