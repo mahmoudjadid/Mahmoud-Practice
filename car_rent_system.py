@@ -14,6 +14,8 @@ class vehicle:
         self.seats=seats
         self.rentprice=rentprice
         self.engcapa=engcapa
+ 
+    
     
     
 veh1=vehicle("BMW", 2020, 4, 40 ,120)
@@ -29,5 +31,3 @@ def totalrent():
     return totalrent
 
 print(veh1.name)
- 
-    
