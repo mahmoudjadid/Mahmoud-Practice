@@ -6,7 +6,7 @@ class motors:
         self.engcap=engcapa
         self.name=name 
         
-class vehicle(motors):
+class car(motors):
     
     def __init__(self, name, year, rentprice, engcapa, seats):
         
@@ -24,8 +24,8 @@ class vehicle(motors):
             rentprice=veh3.rentpr*days    
         print(self.rentpr * days)
             
-veh1=vehicle("BMW", 2020, 40, 4 ,120)
-veh2=vehicle("KIA", 2022, 30, 5, 90)
-veh3=vehicle("toyota", 2019, 35, 7, 130)
-      
+veh1=car("BMW", 2020, 40, 4 ,120)
+veh2=car("KIA", 2022, 30, 5, 90)
+veh3=car("toyota", 2019, 35, 7, 130)
+
 veh1.totalrent()
