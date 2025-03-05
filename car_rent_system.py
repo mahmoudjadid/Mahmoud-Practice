@@ -13,13 +13,16 @@ class car(motors):
         self.seats=seats    
         super() .__init__(name, year, rentprice, engcapa)
 
-    def totalrent(self):
+    def __totalrent(self):
+        self.totalrent=0
         name=None
         carname=input("enter car name: ")
         days=int(input("enter the number of days: "))
         if self.name=="name":
          totalrent=self.rentpr*days 
          print(totalrent)
+         return self.totelrent
+    
             
 veh1=car("BMW", 2020, 40, 4 ,120)
 veh2=car("KIA", 2022, 30, 5, 90)
@@ -29,5 +32,4 @@ print(veh1.name, veh1.year, veh1.engcap, veh1.seats, veh1.rentpr)
 print(veh2.name, veh2.year, veh2.engcap, veh2.seats, veh2.rentpr)
 print(veh3.name, veh3.year, veh3.engcap, veh3.seats, veh3.rentpr)
 
-
-veh1.totalrent()
+totalrent()

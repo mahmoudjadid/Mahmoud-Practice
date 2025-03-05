@@ -1,5 +1,4 @@
 
-
 salary = float(input("please enter salary"))
 month = input("please enter month name")
 savings = float(input("please enter percentage of savings"))
@@ -31,8 +30,9 @@ def xtsavper():
     
 def raiseinsalary():
     
-    if salaryup==true:
+    if salaryup==True:
         newsalary=salary**2    
         print("the new salary is", {newsalary})
         
 expences()
+raiseinsalary()
