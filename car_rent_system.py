@@ -1,8 +1,14 @@
 
 class motors:
+    
+    name= None
+    year = 0
+    rentprice = 0.0
+    engcap = 0.0 
+    
     def __init__(self, name, year, rentprice, engcapa):
         self.year=year
-        self.rentpr=rentprice
+        self.rentprice=rentprice
         self.engcap=engcapa
         self.name=name 
         
@@ -13,7 +19,7 @@ class car(motors):
         self.seats=seats    
         super() .__init__(name, year, rentprice, engcapa)
 
-    def __totalrent(self):
+    def totalrent(self, name , year, ):
         self.totalrent=0
         name=None
         carname=input("enter car name: ")
@@ -22,6 +28,7 @@ class car(motors):
          totalrent=self.rentpr*days 
          print(totalrent)
          return self.totelrent
+    totalrent()
     
             
 veh1=car("BMW", 2020, 40, 4 ,120)
@@ -32,4 +39,4 @@ print(veh1.name, veh1.year, veh1.engcap, veh1.seats, veh1.rentpr)
 print(veh2.name, veh2.year, veh2.engcap, veh2.seats, veh2.rentpr)
 print(veh3.name, veh3.year, veh3.engcap, veh3.seats, veh3.rentpr)
 
-totalrent()
+
